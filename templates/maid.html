@@ -1,0 +1,114 @@
+{% extends 'dummy.html' %}
+{% load static %}
+{%  block title %}
+<title>maid Page</title>
+{% endblock %}
+
+{% block body_block %}
+<center>
+<h2>Maid Request</h2>
+   <form method="POST" action="{% url 'find_available_maids' %}">
+     {% csrf_token %}
+    <table>
+        <tr>
+            <td><label for="nvn">Society Name:</label></td>
+            </tr>
+            <tr>
+            <td>
+                <select name="s" id="nvn" style="width:440px; height: 30px;">
+                    <option value="Society">Select Society</option>
+                    <option value="Society">Society1</option>
+                    <option value="Society">Society2</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="g">Preferred Gender:</label></td>
+        </tr>
+        <tr>
+            <td>
+                <select name="g" id="g" style="width:440px; height: 30px;">
+                    <option value="Society">male</option>
+                    <option value="Society">Female</option>
+                    <option value="Society">Others</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="n">Name:</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="nvn" name="n"></td>
+        </tr>
+        <tr>
+            <td><label for="Number">Contact Number:</label></td>
+        </tr>
+        <tr>
+            <td><input  type="number"  id="Number"></td>
+        </tr>
+
+        <tr>
+            <th>Services Required:</th>
+        </tr>
+        <tr>
+            <td>
+                <select name="sr" id="g" style="width:440px; height: 30px;">
+                    <option value="Society">housekeeping</option>
+                    <option value="Society">washroom Cleaning</option>
+                    <option value="Society">untensils cleaning</option>
+                    <option value="Society">Sweeping</option>
+                </select>
+            </td>
+        </tr>
+       
+        
+    
+        <tr>
+            <td><label for="Number">House Size:</label></td>
+        </tr>
+        <tr>
+            <td>
+                <select name="hs" id="nvn" style="width:440px; height: 30px;">
+                    <option value="Society">1BHK</option>
+                    <option value="Society">2BHK</option>
+                    <option value="Society">3BHK</option>
+                    <option value="Society">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="time">Preferred Timings:</label></td>
+        </tr>
+        <tr>
+            <td><input type="time" name="ti" id="ti"></td>
+            <td><p style="text-align: center;">to</p></td>
+            <td><input type="time" name="ti" id="ti"></td>
+        </tr>
+        <tr>
+            <td><label for="text">Additional Requirements:</label></td>
+        </tr>
+        <tr>
+           <td><input type="text" name="text" id="text" style="height: 90px;"></td>
+        </tr>
+        <tr>
+           <th> <input type="submit" value="Submit Request" class="btn btn-success"></th>
+        </tr>
+
+        
+    </table>
+   </form>
+   </center>
+   <style>
+    form
+    {
+        background-color:ghostwhite;
+        width: 1000px;
+    }
+    input
+    {
+        width:450px;
+    }
+   </style>
+
+{% endblock %}
+ 

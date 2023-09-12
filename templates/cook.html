@@ -1,0 +1,112 @@
+{% extends 'dummy.html' %}
+{% load static %}
+{%  block title %}
+<title>cook Page</title>
+{% endblock %}
+
+{% block body_block %}
+<center>
+<h2>Cook Request</h2>
+   <form>
+    <table>
+        <tr>
+            <td><label for="nvn">Society Name:</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Select Society" id="nvn"></td>
+        </tr>
+        <tr>
+            <td><label for="nvn">Preferred Gender:</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Male" id="nvn"></td>
+        </tr>
+        <tr>
+            <td><label for="nvn">Name:</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="nvn"></td>
+        </tr>
+        <tr>
+            <td><label for="Number">Contact Number:</label></td>
+        </tr>
+        <tr>
+            <td><input  type="number"  id="Number"></td>
+        </tr>
+        <tr>
+            <td><label for="Number">Preferred Timings:</label></td>
+        </tr>
+        <tr>
+            <td><input  type="number"  id="Number"></td>
+            <td><p style="text-align: center;">to</p></td>
+            <td><input  type="number"  id="Number"></td>
+        </tr>
+        <tr>
+            <th>Add Ons:</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="nn" id="nn" style="position: relative;right: 220px;"></td>
+        </tr>
+        <tr>
+            <td><label for="nn">Include Dish-Washing</label></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="nn" id="nn" style="position: relative;right: 220px;"></td>
+        </tr>
+        <tr>
+            <td><label for="nn">Not Include Dish-Washing</label></td>
+        </tr>
+       
+    
+        <tr>
+            <td><label for="Number">For How Many People?:</label></td>
+        </tr>
+        <tr>
+            <td><input  type="number"id="Number"></td>
+        </tr>
+        <tr>
+            <td><label for="Number">How Many Meals Per Day?:</label></td>
+        </tr>
+        <tr>
+            <td><input  type="number"id="Number"></td>
+        </tr>
+        <tr>
+            <td><label for="nvn">Veg/Non Veg:</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nvn" id="nvn"></td>
+        </tr>
+        <tr>
+            <td><label for="nvn">Cooking Speciality:</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nvn" id="nvn"></td>
+        </tr>
+        <tr>
+            <td><label for="nvn">Additional Requirements</label></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nvn" id="nvn"></td>
+        </tr>
+        <tr>
+           <th> <input type="submit" value="Submit Request" class="btn btn-success"></th>
+        </tr>
+
+        
+    </table>
+   </form>
+   </center>
+   <style>
+    form
+    {
+        background-color:ghostwhite;
+        width: 1000px;
+    }
+    input
+    {
+        width:450px;
+    }
+   </style>
+
+{% endblock %}
+ 

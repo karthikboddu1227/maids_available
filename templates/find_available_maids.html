@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Maids</title>
+</head>
+<body>
+    {% if available_maids %}
+    <h1>Available Maids:</h1>
+    <ul>
+        {% for maid in available_maids %}
+        <li>{{ maid.name }} (Rating: {{ maid.rating }})</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>Sorry no maids available.</p>
+    {% endif %}
+</body>
+</html>

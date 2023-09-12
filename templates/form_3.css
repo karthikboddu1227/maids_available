@@ -1,0 +1,71 @@
+#a
+{
+    background-color:rgba(121, 94, 75,0.5);
+    font-size: 18px;
+    color:yellow;
+    margin:50px 50px;
+    text-align: center;
+}
+body
+{
+    background-image: url("https://www.crushpixel.com/big-static15/preview4/planks-dark-old-wood-texture-1847619.jpg");
+}
+legend
+{
+    border:2px solid wheat;
+    border-radius:20px 0px;
+    background-color: black;
+    
+}
+h1
+{  background:radial-gradient(circle,yellow,red,pink,blue,orange,black,white,brown);
+   animation: nvn 2s 1s infinite forwards linear;
+   color:ghostwhite;
+   text-align: center;
+   border-radius: 45px;
+   
+}
+@keyframes nvn {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    25%{
+        filter: hue-rotate(90deg);
+    }
+    50%{
+        filter: hue-rotate(180deg);
+    }
+    75%{
+        filter: hue-rotate(270deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+td
+{
+    position: relative;
+    left:20px; 
+    padding: 5px; 
+  
+}
+input
+{
+    margin-left:30px;
+    border-radius: 50px 0px;
+}
+table
+{
+    margin-top:50px;
+}
+input:hover
+{
+    color: yellowgreen;
+    background:linear-gradient(180deg,blue,red);
+}
+legend:hover
+{
+    color:orange;
+    background:radial-gradient(circle,brown,black,blue,red,yellow,brown);
+
+}
